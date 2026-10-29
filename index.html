@@ -5,8 +5,14 @@
 </head><body>
 <nav><h2>Manish.dev</h2><div><a href="#">Home</a><a href="#contact">Contact</a></div></nav>
 <div class="hero"><div class="card"><img src="https://i.pravatar.cc/150?img=12"><h1>manish</h1><p>web developer | day 15</p></div></div>
+<button onclick="changeText()" style="padding:10px 20px; background:black; color:white; border-radius:8px; margin-top:15px;">Click Me</button>
 <div id="contact"><h2 style="text-align:center">Contact Me</h2><input style="width:100%;padding:10px;margin:10px 0" placeholder="Name"><input style="width:100%;padding:10px;margin:10px 0" placeholder="Email"><button style="width:100%;padding:10px;background:#6c7bff;color:white;border:none">Send</button></div>
 <script>
+<script>
+function changeText(){
+  document.querySelector('h1').innerText = "Manish is a Developer!";
+}
+</script>
 let name = "Manish";
 let skill = "Web Developer";
 console.log("Hi, I'm " + name + " - " + skill);
